@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Location</title>
+	<title>Contact</title>
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	<div class="menu-btn">
+    <div class="menu-btn">
         <i class="fas fa-bars fa-2x"></i>
     </div>
     
@@ -27,14 +27,14 @@
             <li>
                 <a href="index.html">Start</a>
             </li>
-			<li>
-                <a href="news.index.html">News</a>
+            <li>
+                <a href="news.html">News</a>
             </li>
             <li>
-                <a href="services.index.html">Services</a>
+                <a href="services.html">Services</a>
             </li>
             <li>
-                <a href="location.index.html">Contact</a>
+                <a href="location.html">Location</a>
             </li>
         </ul>
 
@@ -48,33 +48,40 @@
         </ul>
     </nav>
 
-	<!-- SHOWCASE -->
-		<header class="showcase">
-			<h2>Big News Today!</h2>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolor laudantium rerum, excepturi est praesentium
-			natus qui? Tempora rerum, numquam inventore eligendi in, nostrum reprehenderit, eum cumque fugit eaque
-			similique!</p>
-			<a href="#" class="btn">
-			    SignUp <i class="fas fa-chevron-right"></i>
-			</a>
-		</header>
 
-		<section>
-			<article>
-				<table>
-					<tr>
-						<td>
-							<h3>Ubicación</h3>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.6844750298687!2d-58.83585048151331!3d-27.479080776940993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9db3b07d35%3A0x6aa21a339e75a415!2sGutenberg%2C%20W3410%20Corrientes!5e0!3m2!1ses!2sar!4v1660266242567!5m2!1ses!2sar" width="400%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-						</td>
-					</tr>
-				</table>
-			</article>
-		</section>
+	<!-- formulario de contacto -->
+	<section>
+		<article>
+			<form action="#">
+				<input type="text" placeholder="NOMBRE Y APELLIDO"><br>
+				<label for="email">E-mail:
+					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
+				</label>
+				<label for="Observaciones"> Observaciones:<br>
+					<textarea placeholder="Observaciones"></textarea>
+				</label> <br>
+				<input type="number" placeholder="EDAD"><br>
+				<div><p>Elije un lado:</p>
+					<div>Izquierda
+						<input type="radio" name="lado" value="izquierda">
+					</div>
+					<div>Derecha
+						<input type="radio" name="lado" value="derecha">
+					</div>
+				</div>
+				<p>Que letra te gusta mas?</p>
+				<select name="letra" id="letra"> 
+					<option value="x">X</option>
+					<option value="y">Y</option>
+					<option value="z">Z</option>
+				</select>
+				<div>Queres recibir info sobre nosotros?
+				<input type="checkbox" name="acepta" value="1"></div>
+				<input type="submit" value="ACEPTO">
+				<input type="reset" value="RESETEAR">
+			</form>
+		</article>
+	</section>
 
     <!-- Follow -->
     <section class="social">
@@ -91,10 +98,10 @@
             </a>
         </div>
     </section>
-
-
     </div>
-	<!-- Footer -->
+
+
+<!-- Footer -->
     <footer class="footer">
         <h3>Tech News Copyright</h3>
     </footer>
